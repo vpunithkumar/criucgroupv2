@@ -1,0 +1,89 @@
+(26.634958) Version: 3.15 (gitid v3.14-377-gfbff0e96c)
+(44.929309) Running on localhost.localdomain Linux 5.11.18-200.fc33.x86_64 #1 SMP Mon May 3 15:05:29 UTC 2021 x86_64
+(74.054752) Loaded kdat cache from /run/criu.kdat
+(89.482961) ========================================
+(105.029766 Dumping processes (pid: 5640)
+(119.550942 ========================================
+(145.558074 rlimit: RLIMIT_NOFILE unlimited for self
+(396.718754 Running pre-dump scripts
+(454.952199 irmap: Searching irmap cache in work dir
+(484.754090 No irmap-cache image
+(509.431520 irmap: Searching irmap cache in parent
+(528.628895 No parent images directory provided
+(544.844093 irmap: No irmap cache
+(1216.01863 cpu: x86_family 6 x86_vendor_id GenuineIntel x86_model_id Intel(R) Core(TM)2 Duo CPU     P9400  @ 2.40GHz
+(1245.89384 cpu: fpu: xfeatures_mask 0x1 xsave_size 576 xsave_size_max 576 xsaves_size 0
+(1271.00608 cpu: fpu: x87 floating point registers     xstate_offsets      0 / 0      xstate_sizes    160 / 160   
+(1303.41572 cpu: fpu:1 fxsr:1 xsave:1 xsaveopt:0 xsavec:0 xgetbv1:0 xsaves:0
+(13612.8797 cg-prop: Parsing controller "cpu"
+(13651.5198 cg-prop: 	Strategy "replace"
+(13859.8245 cg-prop: 	Property "cpu.shares"
+(13881.3094 cg-prop: 	Property "cpu.cfs_period_us"
+(14085.7637 cg-prop: 	Property "cpu.cfs_quota_us"
+(14129.1280 cg-prop: 	Property "cpu.rt_period_us"
+(14765.2607 cg-prop: 	Property "cpu.rt_runtime_us"
+(15266.2850 cg-prop: Parsing controller "memory"
+(15298.5468 cg-prop: 	Strategy "replace"
+(15506.1153 cg-prop: 	Property "memory.limit_in_bytes"
+(15575.0936 cg-prop: 	Property "memory.memsw.limit_in_bytes"
+(15604.0947 cg-prop: 	Property "memory.swappiness"
+(15689.6856 cg-prop: 	Property "memory.soft_limit_in_bytes"
+(15718.9682 cg-prop: 	Property "memory.move_charge_at_immigrate"
+(15855.3675 cg-prop: 	Property "memory.oom_control"
+(15905.1889 cg-prop: 	Property "memory.use_hierarchy"
+(15964.7240 cg-prop: 	Property "memory.kmem.limit_in_bytes"
+(15988.9015 cg-prop: 	Property "memory.kmem.tcp.limit_in_bytes"
+(16021.8239 cg-prop: Parsing controller "cpuset"
+(16205.0910 cg-prop: 	Strategy "replace"
+(16251.1281 cg-prop: 	Property "cpuset.cpus"
+(16271.9803 cg-prop: 	Property "cpuset.mems"
+(16303.5865 cg-prop: 	Property "cpuset.memory_migrate"
+(16328.5531 cg-prop: 	Property "cpuset.cpu_exclusive"
+(16416.1943 cg-prop: 	Property "cpuset.mem_exclusive"
+(16444.1983 cg-prop: 	Property "cpuset.mem_hardwall"
+(16485.5701 cg-prop: 	Property "cpuset.memory_spread_page"
+(16527.2223 cg-prop: 	Property "cpuset.memory_spread_slab"
+(16568.6487 cg-prop: 	Property "cpuset.sched_load_balance"
+(16608.7343 cg-prop: 	Property "cpuset.sched_relax_domain_level"
+(16760.2789 cg-prop: Parsing controller "blkio"
+(16860.8621 cg-prop: 	Strategy "replace"
+(16980.8135 cg-prop: 	Property "blkio.weight"
+(17021.5046 cg-prop: Parsing controller "freezer"
+(18364.7596 cg-prop: 	Strategy "replace"
+(18564.7020 cg-prop: Parsing controller "perf_event"
+(18806.7358 cg-prop: 	Strategy "replace"
+(26581.6030 cg-prop: Parsing controller "net_cls"
+(35757.3111 cg-prop: 	Strategy "replace"
+(35836.1273 cg-prop: 	Property "net_cls.classid"
+(37052.8014 cg-prop: Parsing controller "net_prio"
+(37472.4271 cg-prop: 	Strategy "replace"
+(72870.9516 cg-prop: 	Property "net_prio.ifpriomap"
+(72950.4845 cg-prop: Parsing controller "pids"
+(73003.9578 cg-prop: 	Strategy "replace"
+(73180.9282 cg-prop: 	Property "pids.max"
+(73242.0410 cg-prop: Parsing controller "devices"
+(73290.4836 cg-prop: 	Strategy "replace"
+(73361.4733 cg-prop: 	Property "devices.list"
+(73689.9591 Preparing image inventory (version 1)
+(74009.3696 Add pid ns 1 pid 6964
+(74097.9946 Add net ns 2 pid 6964
+(74129.7698 Add ipc ns 3 pid 6964
+(74150.0283 Add uts ns 4 pid 6964
+(74171.5885 Add time ns 5 pid 6964
+(74244.2595 Add mnt ns 6 pid 6964
+(74266.2785 Add user ns 7 pid 6964
+(74295.8808 Add cgroup ns 8 pid 6964
+(74309.1519 cg: Dumping cgroups for 6964
+(74971.1662 cg:  `- New css ID 1
+(75023.8014 cg:     `- [] -> [/user.slice/user-0.slice/user@0.service/app-gnome-nemiver-6898.scope] [0]
+(75171.0745 cg:     `- [name=zdtmtst] -> [/] [0]
+(75205.0855 cg:     `- [name=zdtmtst.defaultroot] -> [/] [0]
+(75311.9113 cg: Set 1 is criu one
+(76047.1219 Error (criu/cr-dump.c:1469): Timeout reached. Try to interrupt: 0
+(76048.3158 Error (criu/cr-dump.c:1469): Timeout reached. Try to interrupt: 1
+(76050.2266 Error (criu/cr-dump.c:1469): Timeout reached. Try to interrupt: 2
+(76058.6819 Error (criu/cr-dump.c:1469): Timeout reached. Try to interrupt: 3
+(76060.2581 Error (criu/cr-dump.c:1469): Timeout reached. Try to interrupt: 4
+(76061.9780 Error (criu/cr-dump.c:1469): Timeout reached. Try to interrupt: 5
+(76061.9799 Error (criu/cr-dump.c:1475): FATAL: Unable to interrupt the current operation
+(76061.9817 Error (criu/cr-dump.c:1476): BUG at criu/cr-dump.c:1476
